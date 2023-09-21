@@ -1,18 +1,16 @@
-@font-face {
-    font-family: [Barlow Condensed];
-    src: url(https://fonts.google.com/specimen/Barlow+Condensed);
-}
+  @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&display=swap');
 
  .nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-family:Barlow Condensed ;
+    font-family: 'Barlow Condensed', sans-serif;
     font-weight: 700;
-    /* margin: 30px ; */
+    letter-spacing: 0.8px;
+    margin: 20px 8%;
  }
  /* .logo{
-
+    
  } */
  
  .links{
@@ -52,36 +50,49 @@
  @media screen and (max-width: 675px){
 .links{
    display: none;
+ 
 }
 .menubt{
    display: inline;
-   transition: ease-in-out 5s;
-   transform:  rotate(360deg);
+   transition: 4s;
 } 
+
 .open{
    display: block;  
    background-color: white;
-   padding: 30px;
+   padding: 10px 3.5rem ;
    position: absolute;
-   top: 12%;
-   right: 15%;
-   margin-top: 30px;
-   box-shadow: 10px 12px 90px  rgb(225, 221, 221);
-   /* border: 2px solid; */
+   top: 10%;
+   right: 9.5%;
+   margin: 0 auto;
+   box-shadow: 10px 12px 40px  rgb(180, 178, 178, 0.6);
 }
-
 ul li{
-   margin: 10px 70px;
+   margin: 15px 70px;
    display: block;
-  
-   /* background-color: brown; */
    padding-bottom: 10px;
+}
+.login{
+   margin-bottom: 20px;
 }
 .line{
 width: 100%;
 height: 2px;
 background-color: hsl(231, 7%, 65%, 0.4);
-margin: 30px 0;
+margin: 10px 0;
 }
 
  }
+ @media screen and (max-width: 375px){
+   .open{
+      display: block;  
+      background-color: white;
+      padding: 0 3.5rem;
+      position: absolute;
+      top: 10%;
+      right: 5.4%;
+      margin-top: 10px;
+      box-shadow: 10px 12px 40px  rgb(180, 178, 178, 0.6);
+   }
+
+}

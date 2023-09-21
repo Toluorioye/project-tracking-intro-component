@@ -5,6 +5,7 @@ import Nav from './components/Nav';
 function App() {
   return (
     <div className="App">
+      <div className='bg'></div>
       <Nav/>
       <Body/>
     </div>

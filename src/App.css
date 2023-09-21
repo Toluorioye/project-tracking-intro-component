@@ -5,18 +5,19 @@
   
 }
 body{
-  margin: 20px 10%;
+ 
   font-size: 18px;
+  overflow-x: hidden;
 }
-@media (max-width: 668px
-){
- body{
-  margin: 40px 9%;
- }
+.bg{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: calc(50vw - 10px);
+  background-color: hsl(207, 33%, 95%)
+  ;
+  z-index: -1;
+  border-bottom-left-radius: 4rem;
+  height: calc(50vh - 10px);
 }
-@media (max-width: 450px
-){
- body{
-  margin: 50px 3%;
- }
-}
+

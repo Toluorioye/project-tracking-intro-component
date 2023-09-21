@@ -8,6 +8,7 @@ const Nav = () => {
     
   return (
     <>
+    
      <div className='nav'>
         <img src={Logo} alt="logo" className='logo'/>
         <div className='linkcont'>
